@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product | RedStore</title>
+    <title>RedStore |Ecommerce</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Font Link -->
     <link
@@ -17,45 +17,77 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <img src="images/logo.png" alt="logo" width="125px" />
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="logo" width="125px"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <img src="images/cart.png" alt="cart" width="30px" height="30px"
+          /></a>
+          <img
+            src="images/menu.png"
+            alt="cart"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
         </div>
-        <nav>
-          <ul id="MenuItems">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="account.html">Account</a></li>
-          </ul>
-        </nav>
-        <a href="cart.html">
-          <img src="images/cart.png" alt="cart" width="30px" height="30px"
-        /></a>
-        <img
-          src="images/menu.png"
-          alt="cart"
-          class="menu-icon"
-          onclick="menutoggle()"
-        />
+
+        <div class="row">
+          <div class="col-2">
+            <h1>
+              Give your Workout <br />
+              A new Style!
+            </h1>
+            <p>
+              Success is not always about Greatness. It's about
+              consistency.Consistent <br />
+              hard work gain success. Greatness will come.
+            </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+          </div>
+
+          <div class="col-2">
+            <img src="images/image1.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="small-container">
-      <div class="row row-2">
-        <h2>All Products</h2>
-        <select>
-          <option>Sort</option>
-          <option>Sort By Price</option>
-          <option>Sort By popularity</option>
-          <option>Sort by Sale</option>
-        </select>
-      </div>
+    <!-- header section end -->
 
+    <!-- Fatured Categories -->
+
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3"><img src="images/category-1.jpg" alt="" /></div>
+          <div class="col-3"><img src="images/category-2.jpg" alt="" /></div>
+          <div class="col-3"><img src="images/category-3.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured-Products -->
+
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
       <div class="row">
         <div class="col-4">
-          <img src="images/product-1.jpg" alt="" />
+          <a href="productdetails.html">
+            <img src="images/product-1.jpg" alt=""
+          /></a>
           <h4>Red Printed T-shirt</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
@@ -103,6 +135,11 @@
           <p>&#x20B9; 700</p>
         </div>
       </div>
+
+      <!-- Latest Products -->
+
+      <h2 class="title">Latest Products</h2>
+
       <div class="row">
         <div class="col-4">
           <img src="images/product-5.jpg" alt="" />
@@ -201,12 +238,108 @@
           <p>&#x20B9; 1700</p>
         </div>
       </div>
-      <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>&#8594;</span>
+    </div>
+
+    <!-- offer -->
+
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/exclusive.png" alt="" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Exclusively Available</p>
+            <h1>mi Smart Band 4</h1>
+            <small>
+              The Mi smart Band 4 features a 39.9% larger(than Mi band 3) AMOLED
+              color full-touch display with adjustable brightness, so everything
+              is clear as can be. <br />
+            </small>
+            <a href="" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonial -->
+
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem Ipsum isw simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has benn the industry's standard Dummy Test.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="images/user-1.png" alt="" />
+            <h3>ABCD Name</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem Ipsum isw simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has benn the industry's standard Dummy Test.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="images/user-2.png" alt="" />
+            <h3>ABCD Name</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem Ipsum isw simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has benn the industry's standard Dummy Test.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="images/user-3.png" alt="" />
+            <h3>ABCD Name</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------- Brands Logo -->
+
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/logo-godrej.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-coca-cola.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-oppo.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-paypal.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-philips.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
 
